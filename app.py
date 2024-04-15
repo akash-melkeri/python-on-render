@@ -8,6 +8,11 @@ CORS(app)
 def default():
     return jsonify(ok=True, message='Hello, World!')
 
+
+@app.route('/try-it/')
+def try_it():
+    return jsonify(ok=True, message='TRY, World!')
+
 @app.route('/api/')
 def api():
     return jsonify(ok=True, message='API, World!')
