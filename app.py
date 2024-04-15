@@ -9,7 +9,7 @@ def default():
     return jsonify(ok=True, message='Hello, World!')
 
 @app.route('/api/')
-def default():
+def api():
     return jsonify(ok=True, message='API, World!')
 
 if __name__ == '__main__':
